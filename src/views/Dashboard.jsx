@@ -247,7 +247,7 @@ function Dashboard(props) {
                         <td>
                           <p className="title">뭐가 들어가야 할까</p>
                           <p className="text-muted">
-                            Dwuamish Head, Seattle, WA 8:47 AM
+                            오른쪽에 edit task 기능 구현을 못하는중
                           </p>
                         </td>
                         <td className="td-actions text-right">

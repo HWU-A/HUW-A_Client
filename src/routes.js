@@ -21,7 +21,7 @@ import Dashboard from "views/Dashboard.jsx";
 import Notifications from "views/Notifications.jsx";
 // import Rtl from "views/Rtl.jsx";
 import TableList from "views/TableList.jsx";
-import Typography from "views/Typography.jsx";
+import Articles from "views/Articles.jsx";
 import UserProfile from "views/UserProfile.jsx";
 
 var routes = [
@@ -74,11 +74,11 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/typography",
+    path: "/articles",
     name: "게시판?",
     rtlName: "طباعة",
     icon: "tim-icons icon-bullet-list-67",
-    component: <Typography />,
+    component: <Articles />,
     layout: "/admin",
   },
 

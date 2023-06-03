@@ -90,24 +90,23 @@ function FixedPlugin(props) {
               block
               className="btn-round"
             >
-              뭐로 바꾸지 여긴
+              뭐로 바꾸지 여긴. 일단 ui-dashboard doc
             </Button>
             <Button
               color="default"
               block
               className="btn-round"
               outline
-              href="https://demos.creative-tim.com/black-dashboard-react/#/documentation/tutorial"
+              href="https://getbootstrap.kr/docs/5.1/components/scrollspy/"
             >
-              없애도 될거같고
+              없애도 될거같고. 일단 부트스트랩 doc
             </Button>
           </li>
           <li className="header-title">얜 또 뭐로</li>
           <li className="button-container">
             <Button
-              href="https://www.creative-tim.com/product/black-dashboard-pro-react"
+              href="https://getbootstrap.kr/docs/5.1/components/scrollspy/"
               className="btn-round"
-              disabled
               block
               color="danger"
             >
