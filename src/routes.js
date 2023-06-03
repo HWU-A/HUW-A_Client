@@ -69,7 +69,7 @@ var routes = [
     path: "/tables",
     name: "운동일지 및 식단",
     rtlName: "قائمة الجدول",
-    icon: "tim-icons icon-puzzle-10",
+    icon: "tim-icons icon-user-run",
     component: <TableList />,
     layout: "/admin",
   },
@@ -77,10 +77,11 @@ var routes = [
     path: "/typography",
     name: "게시판?",
     rtlName: "طباعة",
-    icon: "tim-icons icon-align-center",
+    icon: "tim-icons icon-bullet-list-67",
     component: <Typography />,
     layout: "/admin",
   },
+
   // {
   //   path: "/rtl-support",
   //   name: "RTL Support",

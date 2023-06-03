@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-
+import { useNavigate } from "react-router-dom";
 import {
   Button,
   Collapse,
@@ -24,6 +24,13 @@ function AdminNavbar(props) {
   const [collapseOpen, setcollapseOpen] = React.useState(false);
   const [modalSearch, setmodalSearch] = React.useState(false);
   const [color, setcolor] = React.useState("navbar-transparent");
+  const navigate = useNavigate();
+
+  const goto = (path) => {
+    navigate(path);
+    console.log(`goto ${path}`);
+  };
+
   React.useEffect(() => {
     window.addEventListener("resize", updateColor);
     // Specify how to clean up after this effect:
@@ -95,7 +102,7 @@ function AdminNavbar(props) {
                   nav
                 >
                   <div className="notification d-none d-lg-block d-xl-block" />
-                  <i className="tim-icons icon-sound-wave" />
+                  <i className="tim-icons icon-bell-55" />
                   <p className="d-lg-none">알림</p>
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-navbar" right tag="ul">
@@ -139,14 +146,29 @@ function AdminNavbar(props) {
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-navbar" right tag="ul">
                   <NavLink tag="li">
-                    <DropdownItem className="nav-item">프로필</DropdownItem>
+                    <DropdownItem
+                      className="nav-item"
+                      onClick={() => goto("user-profile")}
+                    >
+                      프로필
+                    </DropdownItem>
                   </NavLink>
                   <NavLink tag="li">
-                    <DropdownItem className="nav-item">설정</DropdownItem>
+                    <DropdownItem
+                      className="nav-item"
+                      onClick={() => goto("setting")}
+                    >
+                      설정
+                    </DropdownItem>
                   </NavLink>
                   <DropdownItem divider tag="li" />
                   <NavLink tag="li">
-                    <DropdownItem className="nav-item">로그아웃</DropdownItem>
+                    <DropdownItem
+                      className="nav-item"
+                      onClick={() => goto("logout")}
+                    >
+                      로그아웃
+                    </DropdownItem>
                   </NavLink>
                 </DropdownMenu>
               </UncontrolledDropdown>
