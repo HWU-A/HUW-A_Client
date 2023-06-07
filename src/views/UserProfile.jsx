@@ -66,7 +66,7 @@ function UserProfile() {
                         <label htmlFor="exampleInputEmail1">
                           학교 이메일 주소
                         </label>
-                        <Input placeholder="gildong@email.com" type="email" />
+                        <Input placeholder="gildong@ajou.ac.kr" type="email" />
                       </FormGroup>
                     </Col>
                   </Row>
@@ -118,8 +118,7 @@ function UserProfile() {
                         <label>소개 글</label>
                         <Input
                           cols="80"
-                          placeholder="본인을 소개하세요.                                                                   
-                          좋아하는 음식, 커뮤니티 활동 목적, 기타 취미 등 "
+                          placeholder="본인을 자유롭게 소개해보세요!"
                           rows="4"
                           type="textarea"
                         />
